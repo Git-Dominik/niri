@@ -607,7 +607,7 @@ binds {
     // since it will switch twice upon pressing the hotkey (once by xkb, once by niri).
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
-
+    Mod+Shift+S { spawn "sh" "-c" "grim -g \"$(slurp)\" - | swappy -f -"; }
     Print { screenshot; }
     Ctrl+P { screenshot-screen; }
     Alt+P { screenshot-window; }
